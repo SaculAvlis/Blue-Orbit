@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 25% 5%;
+    --foreground: 210 20% 97%;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-deep text-white antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+  }
+  
+  .glass-card {
+    @apply bg-white/[0.02] backdrop-blur-lg border border-white/5 rounded-xl;
+  }
+  
+  .glass-input {
+    @apply bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-orbital/50;
+  }
+  
+  .hairline {
+    @apply h-px bg-white/10;
+  }
+  
+  .tag {
+    @apply inline-flex items-center px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-md bg-orbital/10 text-orbital border border-orbital/20;
+  }
+  
+  .status-dot {
+    @apply w-2 h-2 rounded-full bg-orbital shadow-[0_0_8px_rgba(59,142,165,0.5)];
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes slow-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-slow-rotate {
+  animation: slow-rotate 60s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0f16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 142, 165, 0.3);
+  border-radius: 3px;
+}
