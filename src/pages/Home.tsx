@@ -85,7 +85,7 @@ function Home() {
         <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-6 items-start">
             {/* Main Card */}
-            <div className="lg:col-span-8 hero-content glass-panel p-8 lg:p-12">
+            <div className="lg:col-span-8 hero-content glass-panel bg-black/30 p-8 lg:p-12">
               <div className="flex items-center gap-3 mb-8">
                 <div className="status-dot" />
                 <span className="font-mono text-xs uppercase tracking-wider text-white/50">Blue Orbit</span>
