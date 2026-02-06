@@ -175,7 +175,7 @@ function Home() {
 
             <div className="glass-panel p-3 lg:mt-12">
               <div className="relative rounded-xl overflow-hidden min-h-[280px]">
-                <img src="/working-photo.jpg" alt="Mapping the Blue Orbit vision" className="absolute inset-0 w-full h-full object-cover" />
+                <img src="/working-photo.jpg" alt="Mapping the Blue Orbit vision" className="absolute inset-0 w-full h-full object-contain" />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep/60 via-transparent to-transparent" />
               </div>
               <div className="p-4">
