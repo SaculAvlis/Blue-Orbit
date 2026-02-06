@@ -95,7 +95,7 @@ function Home() {
                 Understand what you can do with your home — before you make costly decisions.
               </h1>
 
-              <p className="text-lg text-white/60 max-w-lg mb-10 leading-relaxed">
+              <p className="text-lg font-light text-white/55 max-w-lg mb-10 leading-relaxed">
                 Blue Orbit helps homeowners in Ireland make sense of planning rules, extensions, and constraints — so they know what's possible and what to do next, with clarity and confidence.
               </p>
 
